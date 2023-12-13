@@ -11,7 +11,7 @@ Thanks for checking out this front-end coding challenge.
 **To do this challenge, you need a good understanding of HTML, CSS and JavaScript.**
 
 ## The challenge
-### Demo: https://mariem25.github.io/Interactive-card-details-form/
+### PREVIEW SITE: https://mariem25.github.io/Interactive-card-details-form/
 
 Your challenge is to build out this interactive card details form and get it looking as close to the design as possible.
 
