@@ -1,0 +1,331 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main .thanks #continue, main .form .confirm {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(278, 68%, 11%);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .cards {
+  width: 53%;
+  height: 100%;
+}
+main .cards .top-card, main .cards .bottom-card {
+  max-width: 28rem;
+  position: relative;
+  margin: 50px auto;
+  height: 245px;
+  color: hsl(0, 0%, 100%);
+  border-radius: 19px;
+  background-size: 100% 100%;
+  -webkit-border-radius: 19px;
+  -moz-border-radius: 19px;
+  -ms-border-radius: 19px;
+  -o-border-radius: 19px;
+}
+main .cards .top-card {
+  background: url("../images/bg-card-front.png") no-repeat;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  text-transform: uppercase;
+}
+main .cards .top-card .serial-num {
+  letter-spacing: 4px;
+  font-size: clamp(22px, 2.5vw, 27px);
+  margin-bottom: 15px;
+}
+main .cards .top-card .card-name {
+  text-align: start;
+}
+main .cards .top-card .month-year {
+  display: flex;
+}
+main .cards .top-card::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 1px solid hsl(270, 3%, 87%);
+  top: 27px;
+  left: 70px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+main .cards .top-card::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: hsl(270, 3%, 87%);
+  border-radius: 50%;
+  top: 15px;
+  left: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+main .cards .bottom-card {
+  background: url("../images/bg-card-back.png") no-repeat;
+  margin-right: 16px;
+}
+main .cards .bottom-card .card-cvc {
+  position: absolute;
+  top: 104px;
+  right: 50px;
+  font-size: clamp(20px, 2.3vw, 22px);
+  letter-spacing: 4px;
+}
+main .form {
+  width: 47%;
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 130px;
+}
+main .form input {
+  width: 100%;
+  outline: none;
+  border: 1px solid rgb(218, 213, 213);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  padding: 7px 8px;
+  margin-bottom: 10px;
+  font-size: 400;
+}
+main .form .birth {
+  display: flex;
+}
+main .form .birth input {
+  display: block;
+}
+@media (max-width: 1235px) {
+  main .form {
+    padding: 50px 70px;
+  }
+}
+@media (max-width: 987px) {
+  main .form .datetxt {
+    font-size: 12px;
+  }
+}
+main .thanks {
+  height: 100%;
+  width: 47%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .thanks .icon {
+  background: url(../images/icon-complete.svg) no-repeat;
+  background-size: 100% 100%;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+main .thanks h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 32px;
+}
+main .thanks p {
+  font-size: 16px;
+  color: hsl(279, 6%, 55%);
+}
+main .thanks #continue {
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  width: 80%;
+}
+main::after {
+  content: "";
+  position: absolute;
+  background: url("../images/bg-main-desktop.png") no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 35%;
+  height: 100%;
+  z-index: -100;
+}
+@media (max-width: 930px) {
+  main {
+    flex-direction: column;
+  }
+  main::after {
+    width: 100vw;
+    height: 45vh;
+    background: url("../images/bg-main-mobile.png") no-repeat;
+    background-size: cover;
+  }
+  main .cards {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    position: relative;
+    margin: auto;
+  }
+  main .cards .top-card,
+  main .cards .bottom-card {
+    background-size: 100% 100%;
+    transform: scale(0.94);
+    -webkit-transform: scale(0.94);
+    -moz-transform: scale(0.94);
+    -ms-transform: scale(0.94);
+    -o-transform: scale(0.94);
+    position: absolute;
+  }
+  main .cards .top-card {
+    top: 148px;
+    left: 88px;
+    margin: 0;
+    width: 100%;
+    left: 45%;
+    top: 67%;
+    transform: translate(-50%, -50%);
+  }
+  main .cards .bottom-card {
+    left: 55%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    margin: 0;
+    width: 100%;
+    width: 100%;
+  }
+  main .form {
+    width: 80%;
+    padding: 0;
+    margin: 0;
+  }
+  main .form div.cvc {
+    flex: 1;
+    width: 100%;
+  }
+  main .form div.cvc label {
+    width: 100%;
+  }
+  main .thanks {
+    width: 100vw;
+    height: 40%;
+  }
+}
+
+@media (max-width: 518px) {
+  main .cards .top-card,
+  main .cards .bottom-card {
+    transform: scale(0.79) translate(-60%, -55%);
+    -webkit-transform: scale(0.79) translate(-60%, -55%);
+    -moz-transform: scale(0.79) translate(-60%, -55%);
+    -ms-transform: scale(0.79) translate(-60%, -55%);
+    -o-transform: scale(0.79) translate(-60%, -55%);
+  }
+  main .cards .top-card {
+    left: 39%;
+    top: 59%;
+  }
+}
+@media (max-width: 445px) {
+  main .cards .top-card,
+  main .cards .bottom-card {
+    transform: scale(0.79) translate(-60%, -55%);
+    -webkit-transform: scale(0.79) translate(-60%, -55%);
+    -moz-transform: scale(0.79) translate(-60%, -55%);
+    -ms-transform: scale(0.79) translate(-60%, -55%);
+    -o-transform: scale(0.79) translate(-60%, -55%);
+  }
+  main .cards .top-card {
+    left: 39%;
+    top: 59%;
+  }
+}
+main .thanks {
+  display: none;
+}
+
+.datedetails {
+  position: relative;
+}
+
+.spanWarning {
+  color: hsl(0, 100%, 66%);
+  font-size: 11px;
+}
+
+.name-input.inputred,
+.num-input.inputred,
+.month-input.inputred,
+.year-input.inputred,
+.cvc-input.inputred {
+  border: 1px solid hsl(0, 100%, 66%);
+}
+
+.shake {
+  animation: horizontal-shaking 0.05s infinite;
+  -webkit-animation: horizontal-shaking 0.35s infinite;
+  background-color: hsl(0, 100%, 66%) !important;
+}
+
+@keyframes horizontal-shaking {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}/*# sourceMappingURL=main.css.map */
